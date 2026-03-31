@@ -1,24 +1,17 @@
-# Antigravity for This Repository
+# Anti Gravity
 
-Use Antigravity in this repo when work is multi-step, cross-cuts multiple files, or should produce reusable artifacts.
+Use this directory for repeatable multi-step workflows.
 
-## Layout
-- `rules/` shared execution constraints for Antigravity
-- `workflows/` prescriptive task flows
-- `task-templates/` task brief templates
-- `artifacts/` report templates for implementation and verification
+Recommended usage:
+- `rules/` for stable guardrails
+- `workflows/` for execution flows
+- `task-templates/` for request templates
+- `artifacts/` for delivery and verification reports
 
-## When to use Antigravity
-Use it for:
-- project bootstrap
-- large feature work
-- cache-first upgrades
-- bugfixes with investigation and remediation
-- Stitch-to-Flutter implementation handoffs
-
-## Suggested entry points
-- `workflows/01-bootstrap-project.md`
-- `workflows/02-implement-film-list.md`
-- `workflows/03-implement-film-detail.md`
-- `workflows/04-add-favorites.md`
-- `workflows/05-stitch-to-flutter.md`
+Suggested first workflows:
+1. Stitch to handoff
+2. Bootstrap Flutter app shell
+3. Implement film list
+4. Implement film detail
+5. Add favorites and recently viewed
+6. Final verification and release readiness

@@ -1,23 +1,14 @@
 # Component Inventory
 
-## Core components
-- app header
-- search bar
-- segmented sort control
+Shared components expected in the app:
+- app bar
+- search field
+- segmented control
 - film card
-- metadata row/chips
-- section header
-- retry panel
-- empty state panel
-- stale-cache status indicator
-
-## Detail components
-- title block
-- synopsis block
-- related resources section
-- favorite button
-
-## Reusable state components
-- loading skeleton
-- empty view
-- error with retry
+- favorite icon button
+- metadata chips
+- synopsis text section
+- empty state block
+- error block with retry action
+- lightweight loading state
+- related content section

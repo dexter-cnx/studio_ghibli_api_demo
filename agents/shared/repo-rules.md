@@ -2,45 +2,47 @@
 
 ## Stack
 - Flutter
-- Dart
 - Material 3
 - Riverpod
 - go_router
 - Dio
 - Easy Localization
-- local persistence for cache, favorites, and recently viewed
+- Clean Architecture with lightweight boundaries
+- local persistence for favorites, recently viewed, and cache
 
-## App type
-This is a read-mostly catalog app backed by a public REST API.
-The app must feel fast even when the network is slow or temporarily unavailable.
+## Product shape
+This is a read-mostly mobile catalog app.
+Core flows:
+- browse films
+- search films
+- open film detail
+- save favorites
+- revisit recently viewed
 
-## Naming
-- feature-first folders under `lib/features/`
-- use snake_case for file names
-- suffix DTOs with `Dto`
-- suffix repository implementations with `Impl`
-- suffix use cases with `UseCase`
-- suffix provider-backed state controllers consistently for the chosen Riverpod style
-
-## Localization
-- all user-facing strings must come from localization keys
-- keys must be namespaced by feature
-- do not hardcode labels, buttons, empty states, or error copy
-
-## UI
-- keep widgets small and composable
-- prefer section widgets over giant pages
-- use Material 3
-- respect `design/DESIGN.md` for spacing, typography, and component behavior
-
-## Data and async behavior
-- no networking in widgets
+## Coding rules
+- no Dio in widgets
 - no JSON parsing in widgets
-- no raw endpoint strings scattered across the codebase
-- normalize failures into app-specific failure types
+- no endpoint strings scattered through presentation
+- keep widgets focused on composition
+- keep files small and readable
+- prefer feature-first structure
 
-## Antigravity usage
-Use `antigravity/` for:
-- multi-step feature implementation
-- bugfixes requiring investigation plus remediation
-- tasks that should produce reusable artifacts or reports
+## State rules
+Every data-backed screen should explicitly support:
+- loading
+- success
+- empty
+- error
+- stale cached data while refreshing
+
+## Localization rules
+- no hardcoded user-facing strings in widgets
+- add new strings to the project localization source of truth
+- use feature-namespaced keys
+
+## Routing rules
+Expected initial routes:
+- `/films`
+- `/films/:id`
+- `/favorites`
+- `/recently-viewed`

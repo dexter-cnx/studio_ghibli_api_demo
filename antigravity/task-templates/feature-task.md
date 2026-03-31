@@ -1,26 +1,20 @@
 # Feature Task Template
 
-## Feature name
+## Feature
 
-## User goal
+## User Goal
 
-## Entry route
+## Entry Route
 
-## Remote data needed
+## Required Data
 
-## Local data needed
+## Local Data
 
-## Required states
+## Required States
 - loading
 - success
 - empty
 - error
-- stale cache + refresh if applicable
+- stale cached data while refreshing
 
-## Failure modes
-
-## Cache behavior
-
-## Files expected to change
-
-## Verification notes
+## Acceptance Notes

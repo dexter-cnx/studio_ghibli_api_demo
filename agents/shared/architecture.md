@@ -1,37 +1,33 @@
 # Architecture
 
-## Core pattern
-Use lightweight Clean Architecture:
+## Feature structure
+Each feature should follow:
 - `presentation/`
 - `domain/`
 - `data/`
 
-Each feature should live under `lib/features/<feature_name>/`.
-
-## Presentation layer
+## Presentation
 Allowed:
 - pages
 - widgets
-- providers/notifiers
+- providers/notifiers/controllers
 - presentation state models
-- route glue
 
 Not allowed:
-- Dio usage
+- direct network access
 - raw JSON parsing
-- endpoint knowledge
-- business logic that belongs in domain or repository layers
+- repository implementation logic
 
-## Domain layer
+## Domain
 Contains:
 - entities
 - repository contracts
 - use cases
-- feature-specific rules
+- domain rules
 
-Domain must not depend on Flutter UI or infrastructure libraries.
+Domain must not depend on Flutter UI or Dio.
 
-## Data layer
+## Data
 Contains:
 - DTOs
 - mappers
@@ -39,19 +35,15 @@ Contains:
 - local data sources
 - repository implementations
 
-## Recommended initial features
-- films
-- favorites
-- recently_viewed
+## Recommended app layout
+- `lib/app/`
+- `lib/core/`
+- `lib/features/`
 
-## Cache-first rendering
-Preferred flow for list/detail screens:
-1. read local cache
-2. render cached data immediately when available
-3. fetch remote data in background
-4. persist updated data
-5. refresh UI without causing a jarring blank state
-
-## Related resource loading
-Related URLs returned by the API should normally be loaded on demand.
-Do not fetch all relationships by default on app startup or list screens.
+## Caching pattern
+Preferred read flow:
+1. read cache first
+2. render immediately if cache exists
+3. fetch remote
+4. persist updated content
+5. refresh UI without blanking working content

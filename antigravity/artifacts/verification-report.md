@@ -1,12 +1,13 @@
 # Verification Report
 
-## Commands run
-- `flutter pub get`
-- `flutter analyze`
-- `flutter test`
+## Scope
+
+## Checks run
+- flutter analyze
+- flutter test
 
 ## Results
 
-## Notes
+## Gaps
 
-## Outstanding issues
+## Recommended follow-up

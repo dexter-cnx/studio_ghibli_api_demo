@@ -1,30 +1,47 @@
 # Screen Specs
 
-## 1. Film List
+## Film List
+Purpose:
+Browse and discover films quickly.
+
 Must include:
-- app title/header
-- search bar
+- app bar
+- search field
 - sort control
 - vertically stacked film cards
-- favorite action on each card
-- loading, empty, error, and stale-cache variants
+- favorite action
+- loading, empty, error, stale-cache states
 
-## 2. Film Detail
+## Film Detail
+Purpose:
+Read detailed information about a selected film.
+
 Must include:
 - title
 - original title
-- metadata section for director, producer, release date, running time, score
-- synopsis section
+- romanised title if available
+- release year
+- running time
+- score
+- director
+- producer
+- long synopsis
 - favorite action
-- related content section loaded on demand
+- related people and locations section
 
-## 3. Favorites
+## Favorites
+Purpose:
+Review locally saved films.
+
 Must include:
-- list of favorited films
+- saved film list
+- quick remove action
 - empty state
-- navigation to film detail
 
-## 4. Recently Viewed
-May appear as:
-- a dedicated screen
-- a section on home/list screen
+## Recently Viewed
+Purpose:
+Let the user reopen films viewed recently.
+
+Must include:
+- compact recent film list
+- empty state

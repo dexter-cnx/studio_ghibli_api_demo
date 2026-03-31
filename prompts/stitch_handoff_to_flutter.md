@@ -1,23 +1,20 @@
 # Stitch Handoff to Flutter Prompt
 
-Implement a Flutter screen from a Stitch handoff.
+Implement this Stitch handoff in the Flutter repository.
 
-## Read first
-- `design/DESIGN.md`
-- the relevant file under `design/stitch/handoffs/`
+Follow:
 - `AGENTS.md`
-- shared rules under `agents/shared/`
+- `CLAUDE.md`
+- `agents/shared/*`
+- `design/DESIGN.md`
 
-## Expectations
-- preserve the layout intent from Stitch
-- translate the design into Flutter widget composition
-- use Material 3 semantics and Flutter-friendly structure
-- do not copy generated front-end code patterns blindly
-- include all required UI states for data-backed screens
-- localize all user-facing text
+Input:
+<PASTE HANDOFF HERE>
 
-## Output
-Provide:
-1. implemented files
-2. key design-to-code decisions
-3. verification results
+Requirements:
+- convert the handoff into Flutter implementation
+- keep presentation/domain/data boundaries clean
+- use Riverpod for state handling
+- use existing router and repository patterns
+- support loading/empty/error/stale-cache states where applicable
+- localize new user-facing strings

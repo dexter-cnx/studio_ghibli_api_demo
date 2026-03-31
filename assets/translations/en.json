@@ -1,0 +1,45 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "no_results": "No results found",
+    "app_name": "Ghibli Catalog"
+  },
+  "films": {
+    "title": "Films",
+    "search_hint": "Search films…",
+    "empty": "No films available",
+    "error": "Could not load films",
+    "sort_title": "Title",
+    "sort_year": "Year",
+    "sort_score": "Score",
+    "stale_banner": "Showing cached data. Pull to refresh."
+  },
+  "film_detail": {
+    "synopsis": "Synopsis",
+    "director": "Director",
+    "producer": "Producer",
+    "release_year": "Release year",
+    "running_time": "Running time",
+    "running_time_value": "{minutes} min",
+    "score": "Score",
+    "related_people": "Characters",
+    "related_locations": "Locations",
+    "original_title": "Original title",
+    "romanised_title": "Romanised title",
+    "added_to_favorites": "Added to favorites",
+    "removed_from_favorites": "Removed from favorites"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "No favorites yet",
+    "empty_subtitle": "Tap the heart icon on a film to save it here.",
+    "removed": "Removed from favorites"
+  },
+  "recently_viewed": {
+    "title": "Recent",
+    "empty": "No recently viewed films",
+    "empty_subtitle": "Films you open will appear here."
+  }
+}

@@ -1,27 +1,21 @@
 # Verification
 
-## Minimum verification
-Run these before considering a task complete:
-
+## Required checks
+Run when relevant:
 ```bash
 flutter pub get
 flutter analyze
 flutter test
 ```
 
-## Additional verification
-Run any project-specific generation steps if relevant, such as localization export or code generation.
+If localization generation exists in the repo, also run it before final verification.
 
-## Required state coverage
-Every data-backed screen must explicitly support:
-- loading
-- success
-- empty
-- error
-- stale cache plus refresh when applicable
-
-## Artifact expectations for Antigravity tasks
-For multi-step work, produce:
-- a short implementation summary
-- a verification report
-- any notable design or cache decisions
+## Review checklist
+- code compiles
+- analyzer issues are addressed
+- tests pass or failures are explained
+- no business logic in widgets
+- routes are wired correctly
+- user-facing text is localized
+- loading/empty/error/stale-cache states are covered
+- changed files remain aligned with `design/DESIGN.md`

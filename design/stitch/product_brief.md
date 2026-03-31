@@ -1,26 +1,26 @@
 # Product Brief
 
-## Product
-A Studio Ghibli catalog app built in Flutter.
+Create a mobile-first Studio Ghibli catalog app.
 
 ## Goal
-Help users browse films and related world-building content in a calm, elegant, mobile-first interface.
+Help users browse and revisit Studio Ghibli films in a calm, elegant, readable mobile experience.
 
-## Audience
-- Studio Ghibli fans
-- users who enjoy film catalog apps
-- users who prefer lightweight, readable browsing experiences
+## Primary screens
+- film list
+- film detail
+- favorites
+- recently viewed
 
-## Primary flows
-- browse films
-- search films
-- open film detail
-- save favorites
-- revisit recently viewed films
-
-## Product tone
+## Key tone words
 - calm
 - warm
 - cinematic
-- minimal
+- elegant
 - readable
+
+## Product constraints
+- mobile-first
+- content-first
+- simple navigation
+- no cluttered dashboards
+- support long-form reading for film descriptions

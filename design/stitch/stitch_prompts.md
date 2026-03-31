@@ -1,23 +1,53 @@
 # Stitch Prompts
 
-## Initial broad prompt
+## Broad app concept
 Create a mobile app for browsing Studio Ghibli films.
-The app should feel calm, warm, elegant, and cinematic.
-Primary screens: film list, film detail, favorites, and recently viewed.
-Use readable mobile-first layouts, card-based browsing, and strong content hierarchy.
+The app should feel calm, warm, elegant, cinematic, and highly readable.
+Target platform is mobile-first.
+Use a clean content-first layout with generous spacing, rounded cards, soft surfaces, and strong text hierarchy.
+Primary screens:
+- film list
+- film detail
+- favorites
+- recently viewed
 
-## Film list refinement
-Refine the film list screen for mobile.
-Add a search bar at the top, a compact sort control, and vertically stacked film cards.
-Each card should show title, original title, release year, score, and a favorite action.
-Include variants for loading, empty, and error states.
+## Film list refine
+Refine the Film List screen for mobile.
+Add:
+- a top app bar
+- a search bar below the app bar
+- a segmented sort control
+- vertically stacked film cards
+- a favorite action on each card
+Each film card should show:
+- title
+- original title
+- release year
+- score
+Do not redesign unrelated screens.
 
-## Film detail refinement
-Refine the film detail screen.
-Show title, original title, metadata chips or rows, long synopsis, a favorite action, and a related content section for people and locations.
-Keep the layout spacious and highly readable.
+## Film detail refine
+Refine the Film Detail screen.
+Show:
+- title
+- original title
+- romanised title if available
+- metadata chips for release year, running time, and score
+- director and producer
+- a long readable synopsis
+- a favorite action
+- a related content section for people and locations
+Do not redesign unrelated screens.
 
-## Favorites refinement
-Create a favorites screen for saved films.
-Use the same card language as the film list.
-Include a clear empty state with a calm tone.
+## Handoff summary prompt
+Summarize the current screen as a developer handoff draft.
+Include:
+- purpose
+- layout structure from top to bottom
+- component list
+- visual rules
+- data that must be shown
+- interactions
+- screen states
+Keep it concise and implementation-oriented for a Flutter mobile app.
+Do not redesign the screen.

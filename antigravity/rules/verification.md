@@ -1,13 +1,7 @@
-# Antigravity Verification Rule
+# Anti Gravity Rule: Verification
 
-No Antigravity task is complete without verification.
-
-Required commands:
-
-```bash
-flutter pub get
-flutter analyze
-flutter test
-```
-
-Also attach a short verification artifact using `artifacts/verification-report.md`.
+Before considering a task complete:
+- run `flutter analyze`
+- run `flutter test`
+- confirm localization changes were applied
+- confirm loading/empty/error/stale-cache states are present where relevant
